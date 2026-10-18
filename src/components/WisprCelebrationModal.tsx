@@ -110,43 +110,47 @@ export const WisprCelebrationModal: React.FC<WisprCelebrationModalProps> = ({
           </p>
         </div>
 
-        {/* Official Unlock Certificate Card */}
+        {/* Official Wispr Flow Usage Card Image */}
+        <div className="relative mb-5 rounded-2xl overflow-hidden border-2 border-[#FFD700]/70 shadow-[0_0_30px_rgba(255,215,0,0.35)] bg-white/5">
+          <img
+            src="/flow-highlights.png"
+            alt="Official Wispr Flow Highlights - 1,980 Words Dictated, 81 WPM"
+            className="w-full h-auto object-contain rounded-2xl"
+          />
+          <div className="absolute bottom-2 left-2 right-2 px-3 py-1 bg-black/85 backdrop-blur-md border border-[#FFD700]/40 rounded-xl flex items-center justify-between text-[10px] text-white font-mono">
+            <span className="flex items-center gap-1.5 text-[#FFD700] font-bold">
+              <CheckCircle2 className="w-3.5 h-3.5 text-[#00ff66]" />
+              Verified Wispr Flow Insights Card
+            </span>
+            <span className="text-[#00ff66] font-bold">1,980 Words • 81 WPM</span>
+          </div>
+        </div>
+
+        {/* Official Unlock Certificate Summary */}
         <div
-          className={`rounded-2xl p-4 border space-y-3 mb-6 ${
+          className={`rounded-2xl p-3 border space-y-2.5 mb-5 ${
             isDark ? 'bg-[#0a0a0a] border-[#1a1a1a]' : 'bg-slate-50 border-slate-200'
           }`}
         >
-          <div className="flex items-center justify-between pb-2 border-b border-gray-700/30">
+          <div className="flex items-center justify-between pb-1.5 border-b border-gray-700/30">
             <span className="text-[10px] opacity-60">VOICE PROFILE STATUS</span>
             <span className="px-2 py-0.5 rounded font-bold text-[#00ff66] bg-[#00ff66]/10 border border-[#00ff66]/40 flex items-center gap-1 text-[10px]">
               <CheckCircle2 className="w-3 h-3" />
-              ACTIVE & READY
+              ACTIVE & READY (81 WPM)
             </span>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 text-[11px]">
-            <div className="p-2.5 rounded-xl bg-black/40 border border-gray-800">
+          <div className="grid grid-cols-2 gap-2 text-[10px]">
+            <div className="p-2 rounded-xl bg-black/40 border border-gray-800">
               <span className="block text-[9px] opacity-60 uppercase">Speaking Cadence</span>
               <span className="text-sm font-bold text-[#FFD700]">81 WPM</span>
-              <span className="text-[9px] text-[#00ff66] block">Verified Flow Cadence</span>
+              <span className="text-[9px] text-[#00ff66] block">Wispr Flow Verified</span>
             </div>
 
-            <div className="p-2.5 rounded-xl bg-black/40 border border-gray-800">
-              <span className="block text-[9px] opacity-60 uppercase">Vocabulary Richness</span>
-              <span className="text-sm font-bold text-[#00f0ff]">96.4%</span>
-              <span className="text-[9px] opacity-70 block">High Lexical Diversity</span>
-            </div>
-
-            <div className="p-2.5 rounded-xl bg-black/40 border border-gray-800">
-              <span className="block text-[9px] opacity-60 uppercase">Engineering Time Saved</span>
-              <span className="text-sm font-bold text-[#00ff66]">~{hoursSaved} hrs</span>
-              <span className="text-[9px] opacity-70 block">Sprint context preserved</span>
-            </div>
-
-            <div className="p-2.5 rounded-xl bg-black/40 border border-gray-800">
-              <span className="block text-[9px] opacity-60 uppercase">Hackathon Words</span>
-              <span className="text-sm font-bold text-white">{totalWords.toLocaleString()}</span>
-              <span className="text-[9px] text-[#FFD700] block">Target 2,000 crossed!</span>
+            <div className="p-2 rounded-xl bg-black/40 border border-gray-800">
+              <span className="block text-[9px] opacity-60 uppercase">Total Dictated</span>
+              <span className="text-sm font-bold text-white">1,980 Words</span>
+              <span className="text-[9px] text-[#FFD700] block">Free Tier Cap Reached</span>
             </div>
           </div>
         </div>
