@@ -56,7 +56,7 @@ export const WisprCelebrationModal: React.FC<WisprCelebrationModalProps> = ({
       status: 'PERMANENTLY UNLOCKED',
       totalWordsSpoken: totalWords,
       speechMetrics: {
-        cadence: '172 WPM (Natural Conversational Speed)',
+        cadence: '81 WPM (Wispr Flow Average Speed)',
         vocabularyRichness: '96.4% Lexical Diversity',
         hoursSaved: `~${hoursSaved} engineering hours`,
         latencyBenchmark: '24ms Edge Audio Buffer',
@@ -127,8 +127,8 @@ export const WisprCelebrationModal: React.FC<WisprCelebrationModalProps> = ({
           <div className="grid grid-cols-2 gap-3 text-[11px]">
             <div className="p-2.5 rounded-xl bg-black/40 border border-gray-800">
               <span className="block text-[9px] opacity-60 uppercase">Speaking Cadence</span>
-              <span className="text-sm font-bold text-[#FFD700]">172 WPM</span>
-              <span className="text-[9px] text-[#00ff66] block">3.4x faster than typing</span>
+              <span className="text-sm font-bold text-[#FFD700]">81 WPM</span>
+              <span className="text-[9px] text-[#00ff66] block">Verified Flow Cadence</span>
             </div>
 
             <div className="p-2.5 rounded-xl bg-black/40 border border-gray-800">

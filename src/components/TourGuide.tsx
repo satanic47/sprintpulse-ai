@@ -40,7 +40,7 @@ export const TourGuide: React.FC<TourGuideProps> = ({ isOpen, onClose, isDark })
       title: '3. Real-Time Speech Telemetry Ticker',
       badge: 'EDGE PERFORMANCE',
       description:
-        'Tracks real-time edge buffer latency in milliseconds (24ms), speech-to-text throughput in words per minute (172 WPM), and cumulative keystrokes saved in real time.',
+        'Tracks real-time edge buffer latency in milliseconds (24ms), speech-to-text throughput in words per minute (81 WPM), and cumulative keystrokes saved in real time.',
       icon: <Radio className="w-5 h-5 text-[#00f0ff]" />,
       hint: 'Operates with 0.00% packet drop rate over WebM audio streams.',
     },

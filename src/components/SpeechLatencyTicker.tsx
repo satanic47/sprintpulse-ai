@@ -13,17 +13,17 @@ export const SpeechLatencyTicker: React.FC<SpeechLatencyTickerProps> = ({
   isDark
 }) => {
   const [latencyMs, setLatencyMs] = useState<number>(24);
-  const [wpm, setWpm] = useState<number>(172);
+  const [wpm, setWpm] = useState<number>(81);
 
   // Micro-jitter simulation for realistic real-time telemetry
   useEffect(() => {
     const interval = setInterval(() => {
       if (isRecording) {
         setLatencyMs(Math.floor(18 + Math.random() * 8)); // 18-26 ms
-        setWpm(Math.floor(168 + Math.random() * 12)); // 168-180 WPM
+        setWpm(Math.floor(78 + Math.random() * 6)); // 78-84 WPM
       } else {
         setLatencyMs(24);
-        setWpm(172);
+        setWpm(81);
       }
     }, 2000);
     return () => clearInterval(interval);
